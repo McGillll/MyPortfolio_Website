@@ -76,7 +76,6 @@ export const MyProjects = () => {
             <div className='w-full lg:w-3/5 px-4 lg:px-28 text-center gap-4 flex flex-col'>
               <h1 className='text-2xl font-bold underline'>Poster Design</h1>
               <p className='text-justify font-light'>A social media design project focused on creating eye-catching carousel edits optimized for Instagram. The visuals combine bold typography, cohesive color schemes, and engaging layouts to boost audience interaction and brand presence. Each design was crafted to be both aesthetically appealing and strategically aligned with digital storytelling, ensuring maximum impact in a fast-scrolling environment.</p>
-              <span className='underline opacity-50 mt-auto cursor-pointer'>Click to visit site.</span>
             </div>
           </div>
         </div>
