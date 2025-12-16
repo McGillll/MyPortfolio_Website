@@ -4,29 +4,41 @@ import { SkillCard } from './SkillCard'
 export const SkillSection = () => {
   const skills = [
     {
-      name: 'Java',
-      img: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000"
-    },
-    {
-      name:'C#', 
-      img: 'https://img.icons8.com/?size=100&id=55251&format=png&color=000000'  
-    },
-    {
       name: 'NuxtJS',
       img: 'https://img.icons8.com/?size=100&id=nvrsJYs7j9Vb&format=png&color=000000'  
-    },
-    {
-      name: 'React',
-      img: 'https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000'  
     },
     {
       name: 'Tailwind CSS',
       img: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000'  
     },
     {
-      name: 'Laravel API',
+      name: 'Laravel',
       img: 'https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000'  
-    }
+    },
+    {
+      name: 'MySQL',
+      img: "https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
+    },
+    {
+      name:'HTML5', 
+      img: 'https://img.icons8.com/?size=100&id=20909&format=png&color=000000'  
+    },
+    {
+      name: 'Java',
+      img: 'https://img.icons8.com/?size=100&id=13679&format=png&color=000000'  
+    },
+    {
+      name: 'Canva',
+      img: 'https://img.icons8.com/?size=100&id=EZQdGLNeo7JI&format=png&color=000000'  
+    },
+    {
+      name: 'Figma',
+      img: 'https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000'  
+    },
+    {
+      name: 'Wix',
+      img: 'https://img.icons8.com/?size=100&id=cQfKnWABsKk9&format=png&color=fafafa'  
+    },
   ]
 
   return (
@@ -40,7 +52,7 @@ export const SkillSection = () => {
             return <SkillCard name={skill.name} img={skill.img}/>
           })}
         </div>
-      </div>  
+      </div>
     </>
 )
 }

@@ -7,14 +7,16 @@ const AboutMe = () => {
     <div  className="flex flex-col items-center text-center justify-center px-6 sm:px-1 text-white py-12"
         >
 
-    <div className='h-60 rounded-full border-8'>
+    <div className='h-60 rounded-full border-8 mb-4 overflow-hidden'>
         <img className='hover:scale-110 transition-all duration-500 ease-in-out h-full w-fit bg-gradient-to-r from-amber-700/20  via-neutral-50/10 to-amber-700/20 rounded-full' src={Me} alt="" />
     </div>
     <div>
       <h2 className="text-3xl sm:text-4xl text-center font-bold mb-4">About Me</h2>
       <p className="text-lg text-justify sm:text-xl max-w-2xl mx-auto mb-6">
-        I am a passionate Fullstack Developer with experience in building dynamic web applications. 
-        My expertise lies in both frontend and backend technologies, allowing me to create seamless user experiences and robust server-side solutions.
+        I build fast and clean websites, design clear layouts, focus on usability, structure, and performance, and work with Rest APIs and handle frontend and backend coordination.
+      </p>
+      <p className="text-lg text-justify sm:text-xl max-w-2xl mx-auto mb-6">
+        I also work as a content moderator, review user generated content, enforce platform rules, and keep online spaces safe and organized. I understand how web platforms operate, which helps me moderate content in context.
       </p>
     </div>
     </div>

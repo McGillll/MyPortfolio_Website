@@ -38,13 +38,26 @@ const navigation = [
       </svg>
     ),
   },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/mcgil-libag/',
+    icon: (props) => (
+      <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.266 2.37 4.266 5.455v6.288zM5.337 7.433a2.062 2.062 0 01-2.062-2.062c0-1.138.924-2.062 2.062-2.062 1.138 0 2.062.924 2.062 2.062 0 1.138-.924 2.062-2.062 2.062zM6.814 20.452H3.861V9h2.953v11.452z"
+        />
+      </svg>
+    ),
+  },
 ]
 
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r rounded-b-lg from-amber-700/40 via-neutral-50/10 to-amber-700/40 border-t-2 border-amber-900/50">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center gap-x-6 md:order-2">
+        <div className="flex justify-center gap-x-4 md:order-2">
           <span className="text-neutral-50">Find me on:</span>
           {navigation.map((item) => (
             <a onClick={()=>{
@@ -56,7 +69,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-sm/6 text-neutral-50 md:order-1 md:mt-0">
-          &copy; 2025 McGil Portfolio. All rights reserved.
+          &copy; 2025 McGil. All rights reserved.
         </p>
       </div>
     </footer>

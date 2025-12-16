@@ -15,10 +15,10 @@ export const HeroSection = () => {
                     Hi, I'm  <img className='h-14 ml-3'src={NameLogo} alt="" />
                 </h1>
                 <h1 className="  text-4xl sm:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
-                    A Fullstack Developer
+                    A Website Developer & Designer
                 </h1>
                 <p className="text-lg sm:text-xl max-w-xl mx-auto mb-8 drop-shadow-md">
-                    Crafting modern web applications with passion and precision. Expert in both frontend & backend technologies.
+                    I build fast and clean websites, design clear layouts, focus on usability, structure, and performance.
                 </p>
                 <Link
                     to="/projects"
