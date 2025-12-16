@@ -20,6 +20,23 @@ export const MyProjects = () => {
         </div>
         <div className='flex flex-col text-neutral-50 gap-6'>
 
+          {/* Cacao Care */}
+          <div onClick={()=>{
+            window.open('https://cacao-care.nuxt.dev/')
+          }} className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
+            <div className='w-full inline lg:hidden lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg'>
+              <img className='w-full h-fit' src={Cacao} alt="Cacao Care Project" />
+            </div>
+            <div className='w-full lg:w-3/5 px-4 lg:px-28 text-center gap-4 flex flex-col'>
+              <h1 className='text-2xl font-bold underline'>CacaoCare</h1>
+              <p className='text-justify font-light'>A web platform dedicated to promoting sustainable cacao farming. It connects farmers with resources, tracks cultivation progress, and supports eco-friendly practices to enhance productivity and environmental care.</p>
+              <span className='underline opacity-50 mt-auto cursor-pointer'>Click to visit site.</span>
+            </div>
+            <div className='hidden lg:inline w-full lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg'>
+              <img className='w-full h-fit' src={Cacao} alt="Cacao Care Project" />
+            </div>
+          </div>
+
           {/* Atlas University */}
           <div onClick={()=>{
             window.open('https://atlas-university.vercel.app/')
@@ -48,23 +65,6 @@ export const MyProjects = () => {
               <h1 className='text-2xl font-bold underline'>Crumbs&Co</h1>
               <p className='text-justify font-light'>A stylish and user-friendly website designed for a bakery or dessert shop. It showcases products, offers easy navigation, and helps customers discover delicious treats with an appealing and modern interface.</p>
               <span className='underline opacity-50 mt-auto cursor-pointer'>Click to visit site.</span>
-            </div>
-          </div>
-
-          {/* Cacao Care */}
-          <div onClick={()=>{
-            window.open('https://cacao-care.nuxt.dev/')
-          }} className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
-            <div className='w-full inline lg:hidden lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg'>
-              <img className='w-full h-fit' src={Cacao} alt="Cacao Care Project" />
-            </div>
-            <div className='w-full lg:w-3/5 px-4 lg:px-28 text-center gap-4 flex flex-col'>
-              <h1 className='text-2xl font-bold underline'>CacaoCare</h1>
-              <p className='text-justify font-light'>A web platform dedicated to promoting sustainable cacao farming. It connects farmers with resources, tracks cultivation progress, and supports eco-friendly practices to enhance productivity and environmental care.</p>
-              <span className='underline opacity-50 mt-auto cursor-pointer'>Click to visit site.</span>
-            </div>
-            <div className='hidden lg:inline w-full lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg'>
-              <img className='w-full h-fit' src={Cacao} alt="Cacao Care Project" />
             </div>
           </div>
           
