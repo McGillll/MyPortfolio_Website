@@ -1,17 +1,13 @@
 import React from 'react';
-import Atlas from '../assets/atlas.png';
-import Crumbs from '../assets/crumbs.png';
-import Cacao from '../assets/cacao.png';
 import design1 from '../assets/design (1).png';
 import design2 from '../assets/design (2).png';
 import design3 from '../assets/design (3).png';
 import design4 from '../assets/design (4).png';
 import design5 from '../assets/design (5).png';
-import { useNavigate } from "react-router-dom";
 import { ImageCarousel } from '../components/ImageCarousel';
+import { ProjectPreview } from '../components/ProjectPreview';
 
 export const MyProjects = () => {
-  const navigate = useNavigate()
   return (
     <div className='max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col gap-10'>
       <div className='text-center'>
@@ -21,8 +17,8 @@ export const MyProjects = () => {
 
           {/* Cacao Care */}
           <a href="https://cacao-care.nuxt.dev/" target="_blank" rel="noopener noreferrer" className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
-            <div className='w-full lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg overflow-hidden'>
-              <img className='w-full h-auto' src={Cacao} alt="Cacao Care Project" loading="lazy" />
+            <div className='w-full lg:w-2/5 h-fit py-5'>
+              <ProjectPreview title="Cacao Care Preview" url="https://cacao-care.nuxt.dev/" />
             </div>
             <div className='w-full lg:w-3/5 px-4 lg:px-12 text-center gap-4 flex flex-col'>
               <h2 className='text-2xl font-bold underline'>CacaoCare</h2>
@@ -31,10 +27,22 @@ export const MyProjects = () => {
             </div>
           </a>
 
+          {/* Raw Power Ministry */}
+          <a href="https://rawpowerministry.com/" target="_blank" rel="noopener noreferrer" className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
+            <div className='w-full lg:w-2/5 h-fit py-5'>
+              <ProjectPreview title="Raw Power Ministry Preview" url="https://rawpowerministry.com/" />
+            </div>
+            <div className='w-full lg:w-3/5 px-4 lg:px-12 text-center gap-4 flex flex-col'>
+              <h2 className='text-2xl font-bold underline'>Raw Power Ministry</h2>
+              <p className='text-justify font-light'>A faith-centered website designed to present ministry information, community updates, and outreach content in a clear and accessible way with a modern, welcoming interface.</p>
+              <span className='underline opacity-50 mt-auto'>Visit site</span>
+            </div>
+          </a>
+
           {/* Atlas University */}
           <a href="https://atlas-university.vercel.app/" target="_blank" rel="noopener noreferrer" className='relative w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
-            <div className='w-full lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg overflow-hidden'>
-              <img className='w-full h-auto' src={Atlas} alt="Atlas Project" loading="lazy" />
+            <div className='w-full lg:w-2/5 h-fit py-5'>
+              <ProjectPreview title="Atlas University Preview" url="https://atlas-university.vercel.app/" />
             </div>
             <div className='w-full lg:w-3/5 px-4 lg:px-12 text-center gap-4 flex flex-col'>
               <h2 className='text-2xl font-bold underline'>Atlas University</h2>
@@ -45,8 +53,8 @@ export const MyProjects = () => {
 
           {/* Crumbs & Co */}
           <a href="https://crumbs-co.vercel.app/" target="_blank" rel="noopener noreferrer" className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
-            <div className='w-full lg:w-2/5 h-fit py-5 bg-gray-200 rounded-lg overflow-hidden'>
-              <img className='w-full h-auto' src={Crumbs} alt="Crumbs & Co Project" loading="lazy" />
+            <div className='w-full lg:w-2/5 h-fit py-5'>
+              <ProjectPreview title="Crumbs & Co Preview" url="https://crumbs-co.vercel.app/" />
             </div>
             <div className='w-full lg:w-3/5 px-4 lg:px-12 text-center gap-4 flex flex-col'>
               <h2 className='text-2xl font-bold underline'>Crumbs&Co</h2>

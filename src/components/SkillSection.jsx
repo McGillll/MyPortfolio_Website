@@ -44,12 +44,19 @@ export const SkillSection = () => {
   return (
     <>
       <div className='mb-10 w-full'>
-        <div className='text-center mb-10'>
-          <h1 className='text-neutral-50 font-semibold text-2xl'>My Skills</h1>
+        <div className='text-center mb-10 motion-safe:animate-slide-up'>
+          <h2 className='text-neutral-50 font-semibold text-3xl sm:text-4xl'>My Skills</h2>
+          <p className='text-neutral-200 mt-3 max-w-2xl mx-auto'>Tools and technologies I use to build polished, responsive, and reliable digital experiences.</p>
         </div>
-        <div className='flex flex-wrap gap-4 justify-center w-full'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-center w-full'>
           {skills.map((skill, index) => (
-            <SkillCard key={skill.name + index} name={skill.name} img={skill.img} />
+            <SkillCard
+              key={skill.name + index}
+              name={skill.name}
+              img={skill.img}
+              className="motion-safe:animate-slide-up"
+              style={{ animationDelay: `${index * 70}ms` }}
+            />
           ))}
         </div>
       </div>

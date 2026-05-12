@@ -1,12 +1,13 @@
 import React from 'react'
 
-export const SkillCard = (props) => {
+export const SkillCard = ({ name, img, className = '', style }) => {
   return (
-    <>
-        <div className='h-fit md:w-40 gap-3 p-5 bg-black/80 shadow-inner shadow-neutral-50 rounded-lg flex flex-col items-center hover:scale-105 hover:bg-amber-700/40 transition-transform'>
-          <img className='w-3/5' src={props.img} alt={`${props.name} logo`} loading="lazy" />
-          <span className='font-medium text-neutral-50'>{props.name}</span>
-        </div>
-    </>
+    <div
+      className={`card card-hover flex flex-col items-center gap-3 border border-white/10 bg-black/70 text-neutral-50 ${className}`}
+      style={style}
+    >
+      <img className='w-3/5 max-w-[72px]' src={img} alt={`${name} logo`} loading="lazy" />
+      <span className='font-medium text-sm tracking-wide'>{name}</span>
+    </div>
   )
 }

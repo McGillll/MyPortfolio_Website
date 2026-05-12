@@ -10,20 +10,32 @@ export const HeroSection = () => {
                 aria-label="Hero section"
             >
                 <div className="max-w-3xl">
-                    <h1 className="flex justify-center items-center text-4xl sm:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+                    <h1
+                        className="flex justify-center items-center text-4xl sm:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg motion-safe:animate-slide-up"
+                        style={{ animationDelay: '80ms' }}
+                    >
                         Hi, I'm
                         <img className="h-12 ml-3" src={NameLogo} alt="Name logo" />
                     </h1>
 
-                    <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight drop-shadow-lg">A Website Developer & Designer</h2>
+                    <h2
+                        className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight drop-shadow-lg motion-safe:animate-slide-up"
+                        style={{ animationDelay: '160ms' }}
+                    >
+                        A Website Developer & Designer
+                    </h2>
 
-                    <p className="text-lg sm:text-xl max-w-xl mx-auto mb-8 drop-shadow-md">
+                    <p
+                        className="text-lg sm:text-xl max-w-xl mx-auto mb-8 drop-shadow-md motion-safe:animate-slide-up"
+                        style={{ animationDelay: '240ms' }}
+                    >
                         I build fast and clean websites, design clear layouts, and focus on usability, structure, and performance.
                     </p>
 
                     <Link
                         to="/projects"
-                        className="inline-block bg-gradient-to-r from-amber-700/40 via-neutral-50/10 to-amber-700/40 text-neutral-50 hover:bg-amber-700/80 font-semibold px-6 py-3 rounded-lg shadow-lg transition duration-300 ease-in-out drop-shadow-md focus:outline-none focus:ring-4 focus:ring-yellow-300"
+                        className="btn btn-primary motion-safe:animate-slide-up"
+                        style={{ animationDelay: '320ms' }}
                     >
                         View My Work
                     </Link>
