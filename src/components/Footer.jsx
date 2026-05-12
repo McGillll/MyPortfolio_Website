@@ -57,18 +57,22 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-r rounded-b-lg from-amber-700/40 via-neutral-50/10 to-amber-700/40 border-t-2 border-amber-900/50">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center gap-x-4 md:order-2">
+        <div className="flex justify-center gap-x-4 md:order-2 items-center">
           <span className="text-neutral-50">Find me on:</span>
           {navigation.map((item) => (
-            <a onClick={()=>{
-              window.open(item.href)
-            }} key={item.name} className="text-neutral-50 hover:text-amber-700/40">
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={item.name}
+              className="text-neutral-50 hover:text-amber-700/40"
+            >
               <span className="sr-only">{item.name}</span>
-              <item.icon aria-hidden="true" className="size-6" />
+              <item.icon aria-hidden="true" className="h-6 w-6" />
             </a>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm/6 text-neutral-50 md:order-1 md:mt-0">
+        <p className="mt-8 text-center text-sm leading-6 text-neutral-50 md:order-1 md:mt-0">
           &copy; 2025 McGil. All rights reserved.
         </p>
       </div>

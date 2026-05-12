@@ -48,9 +48,9 @@ export const SkillSection = () => {
           <h1 className='text-neutral-50 font-semibold text-2xl'>My Skills</h1>
         </div>
         <div className='flex flex-wrap gap-4 justify-center w-full'>
-          {skills.map((skill, index)=>{
-            return <SkillCard name={skill.name} img={skill.img}/>
-          })}
+          {skills.map((skill, index) => (
+            <SkillCard key={skill.name + index} name={skill.name} img={skill.img} />
+          ))}
         </div>
       </div>
     </>
