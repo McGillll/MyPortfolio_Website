@@ -28,9 +28,9 @@ export const MyProjects = () => {
           </a>
 
           {/* Raw Power Ministry */}
-          <a href="https://rawpowerministry.com/" target="_blank" rel="noopener noreferrer" className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
+          <a href="https://rpm-client-rho.vercel.app/" target="_blank" rel="noopener noreferrer" className='w-full flex flex-col lg:flex-row hover:bg-amber-700/40 rounded-lg transition-all duration-500 p-5'>
             <div className='w-full lg:w-2/5 h-fit py-5'>
-              <ProjectPreview title="Raw Power Ministry Preview" url="https://rawpowerministry.com/" />
+              <ProjectPreview title="Raw Power Ministry Preview" url="https://rpm-client-rho.vercel.app/" />
             </div>
             <div className='w-full lg:w-3/5 px-4 lg:px-12 text-center gap-4 flex flex-col'>
               <h2 className='text-2xl font-bold underline'>Raw Power Ministry</h2>
